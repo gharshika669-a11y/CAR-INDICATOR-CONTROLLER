@@ -1,0 +1,36 @@
+==============================================
+       CAR INDICATOR CONTROLLER TEST
+==============================================
+
+TEST 1: No sensors active
+TIME=12000 | LeftSensor=0 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0 | Counter=0
+TIME=15000 | LeftSensor=0 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0 | Counter=1
+TIME=25000 | LeftSensor=0 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0 | Counter=2
+TIME=35000 | LeftSensor=0 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0 | Counter=3
+TIME=45000 | LeftSensor=0 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0 | Counter=4
+TIME=55000 | LeftSensor=0 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0 | Counter=0
+
+TEST 2: Left sensor active
+TIME=42000 | LeftSensor=1 | RightSensor=0 | LeftIndicator=1 | RightIndicator=0
+TIME=55000 | LeftSensor=1 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0
+TIME=65000 | LeftSensor=1 | RightSensor=0 | LeftIndicator=1 | RightIndicator=0
+TIME=75000 | LeftSensor=1 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0
+
+TEST 3: Right sensor active
+TIME=122000 | LeftSensor=0 | RightSensor=1 | LeftIndicator=0 | RightIndicator=1
+TIME=135000 | LeftSensor=0 | RightSensor=1 | LeftIndicator=0 | RightIndicator=0
+TIME=145000 | LeftSensor=0 | RightSensor=1 | LeftIndicator=0 | RightIndicator=1
+TIME=155000 | LeftSensor=0 | RightSensor=1 | LeftIndicator=0 | RightIndicator=0
+
+TEST 4: Both sensors active - HAZARD MODE
+TIME=202000 | LeftSensor=1 | RightSensor=1 | LeftIndicator=1 | RightIndicator=1
+TIME=215000 | LeftSensor=1 | RightSensor=1 | LeftIndicator=0 | RightIndicator=0
+TIME=225000 | LeftSensor=1 | RightSensor=1 | LeftIndicator=1 | RightIndicator=1
+TIME=235000 | LeftSensor=1 | RightSensor=1 | LeftIndicator=0 | RightIndicator=0
+
+TEST 5: Sensors inactive
+TIME=282000 | LeftSensor=0 | RightSensor=0 | LeftIndicator=0 | RightIndicator=0
+
+==============================================
+         SIMULATION COMPLETED
+==============================================
